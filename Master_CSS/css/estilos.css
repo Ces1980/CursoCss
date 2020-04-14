@@ -84,18 +84,22 @@ input[type="submit"]{
 }
 
 /** Selector de hijos*/
-/*
-Se trata de un selector similar al selector descendente, 
-pero muy diferente en su funcionamiento. 
-Se utiliza para seleccionar un elemento que es hijo de otro elemento
- y se indica mediante el "signo de mayor que" (>).
-Mientras que en el selector descendente sólo importa 
-que un elemento esté dentro de otro, independientemente 
-de lo profundo que se encuentre, en el selector de hijos 
-el elemento debe ser hijo directo de otro elemento.
-*/
 #menu > li > a{
     font-size: 15px;
     color:red;
     text-decoration: none;
 }
+
+/** Prioridad en CSS*/
+/*
+*Entre mas especifico este detallado el selector de los estilos
+*mayor prioridad tendra el selector para aplicar los estilos
+*/
+#saludo h1{
+    background-color: brown !important;
+}
+
+h1{
+    background-color: purple !important;
+}
+
