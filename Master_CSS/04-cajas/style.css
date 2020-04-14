@@ -1,0 +1,30 @@
+/**Las cajas que actuan como bloque son a las que se les aplica propiedades de display*/
+/*CSS aplica margenes por defecto a las cajas*/
+*{
+    /*Quitando los pargenes internos y externos por defecto*/
+    margin: 0px;
+    padding: 0px;
+}
+#caja1,
+#caja2{
+    /*Anchura*/
+    width: 250px;
+    /*Altura*/
+    height: 250px;
+    background-color: rgb(161, 161, 221);
+    border: 5px solid red;
+    margin: 15px;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    padding: 20px;
+}
+
+p{
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 230px;
+}
