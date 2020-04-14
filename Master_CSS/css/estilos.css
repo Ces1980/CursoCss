@@ -27,13 +27,6 @@
  }
 
  /**Selector de identificador ID*/
- /*
- Los identificadores son únicos. No pueden haber dos identificadores
-iguales en el mismo documento HTML. 
-Si por alguna razón aparecen dos identificadores iguales, 
-aun así los estilos CSS serán aplicados a los dos elementos. 
-Sin embargo en javascript solo el primer elemento será seleccionado.
- */
  #descripcion,
   #titulo{
      border: 5px solid black;
@@ -43,15 +36,6 @@ Sin embargo en javascript solo el primer elemento será seleccionado.
      background-color: blue;
      border: 2px dashed white;
  }
-
- /**Selector de clase*/
-/*
-*Sin embargo, las clases están pensadas para poder definir 
-*el mismo estilo a varios elementos de la página. Es decir, 
-*puedes asignar una misma clase a varias etiquetas sin problemas. 
-*De hecho, las clases están pensadas justamente para que las utilices
-* en diversos elementos distintos en la página.
-*/
 
 .parrafo{
     font-style: italic;
@@ -97,4 +81,21 @@ input[type="submit"]{
     text-transform: uppercase;
     border: 1px solid black;
     cursor: pointer;
+}
+
+/** Selector de hijos*/
+/*
+Se trata de un selector similar al selector descendente, 
+pero muy diferente en su funcionamiento. 
+Se utiliza para seleccionar un elemento que es hijo de otro elemento
+ y se indica mediante el "signo de mayor que" (>).
+Mientras que en el selector descendente sólo importa 
+que un elemento esté dentro de otro, independientemente 
+de lo profundo que se encuentre, en el selector de hijos 
+el elemento debe ser hijo directo de otro elemento.
+*/
+#menu > li > a{
+    font-size: 15px;
+    color:red;
+    text-decoration: none;
 }
