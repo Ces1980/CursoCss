@@ -26,7 +26,14 @@
      color: red;
  }
 
- /*Selector de identificador ID*/
+ /**Selector de identificador ID*/
+ /*
+ Los identificadores son únicos. No pueden haber dos identificadores
+iguales en el mismo documento HTML. 
+Si por alguna razón aparecen dos identificadores iguales, 
+aun así los estilos CSS serán aplicados a los dos elementos. 
+Sin embargo en javascript solo el primer elemento será seleccionado.
+ */
  #descripcion,
   #titulo{
      border: 5px solid black;
@@ -36,3 +43,29 @@
      background-color: blue;
      border: 2px dashed white;
  }
+
+ /**Selector de clase*/
+/*
+*Sin embargo, las clases están pensadas para poder definir 
+*el mismo estilo a varios elementos de la página. Es decir, 
+*puedes asignar una misma clase a varias etiquetas sin problemas. 
+*De hecho, las clases están pensadas justamente para que las utilices
+* en diversos elementos distintos en la página.
+*/
+
+.parrafo{
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.parrafo1,
+.parrafo3{
+    background-color: rgb(73, 92, 45);
+    color: white;
+}
+
+.parrafo3{
+background-color: orange;
+color: black;
+}
