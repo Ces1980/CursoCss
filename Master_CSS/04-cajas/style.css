@@ -5,8 +5,12 @@
     margin: 0px;
     padding: 0px;
 }
-#caja1,
-#caja2{
+body{
+    padding: 40px;
+}
+.caja{
+    /* block: hace que el comportamiento del elemento sea como un bloque. */
+    display: block;
     /*Anchura*/
     width: 250px;
     /*Altura*/
@@ -19,12 +23,35 @@
     margin-bottom: 20px;
     margin-right: 25px;
     padding: 20px;
+    /**Se pone un elemento a lado del otro a la izquierda de la pantalla */
+    float:left;
+    /**Se ponen a la derecha de la pantalla*/
+    /* float: right; */
+    /**Una caja sobre otra*/
+    /* float: none; */
 }
 
-p{
+.caja p{
     font-weight: bold;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 230px;
+}
+/* 
+ * La propiedad float especifica si un elemento debe salir del flujo normal y
+ * aparecer a la izquierda o a la derecha de su contenedor, 
+ * donde los elementos de texto y los en línea aparecerán a su alrededor. 
+ * 
+    left : El elemento flota a la izquierda de su bloque contenedor.
+    right : El elemento flota a la derecha de su bloque contenedor.
+    none : El elemento no flota.
+*/
+.clearfix{
+    /* Limpia los elementos flotados que se encuentran en la parte de arriba */
+    float:none;
+    /* La propiedad CSS clear especifica si un elemento puede estar al lado de elementos 
+    flotantes que lo preceden o si debe ser movido (cleared) debajo de ellos. 
+    La propiedad clear aplica a ambos elementos flotantes y no flotantes. */
+    clear: both;
 }
