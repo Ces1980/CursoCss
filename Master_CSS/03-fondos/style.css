@@ -1,0 +1,35 @@
+/**
+*https://francescricart.com/la-propiedad-background/
+*La propiedad background cuenta con los siguientes valores
+*background-color: ver color.
+*background-image : ver image.
+*background-repeat : ver repeat.
+*background-attachment : ver background-attachment.
+*background-position:ver position.
+*/
+body{
+    background-color: #cccc;
+    background-image: url(/03-fondos/img/paisaje.png);
+    /**Si se usa una imagen que se repite varias veces de fondo*/
+    background-repeat: no-repeat;
+    /*Agrandar la imagen de fondo*/
+    background-size: 100% 100%;
+    /*Permite que el texto que se tenga se mueva con el scroll pero no el fondo*/
+    background-attachment: fixed;
+    /**Posiciona la imagen según se requiera en el ejemplo izquierda-abajo*/
+    background-position: left bottom;
+    color:white;
+}
+
+#caja{
+    border: 5px solid black;
+    padding: 10px;
+    background-color: rgb(73, 63, 168);
+    color: white;
+}
+
+h2{
+    color: red;
+    background-image: url(img/pattern.png);
+    border: 5px solid red;
+}
