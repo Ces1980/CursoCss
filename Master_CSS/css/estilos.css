@@ -2,20 +2,26 @@
 #####Selectores#######
  */
 
- /* Selector universal {*}  estilos generales
- --> El selector universal CSS (*) coincide con elementos de cualquier tipo.
-     El selector universal sirve para seleccionar, 
-     con ayuda de un joker (el carácter *) 
-     cada elemento del árbol del documento y 
-     vincularlo con una instrucciones determinada. 
-     Una instrucción muy típica es la siguiente:
-* {
-margin: 0;
-padding: 0;
-}
+ /* Selector universal {*}  estilos generales */
 
-Con esta instrucción se da el valor cero, por ejemplo, a las distancias de todos los elementos (*) predefinidas por el navegador.
- */
  *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ /* Selector de etiqueta, elemento o de tipo*/
+
+ h1{
+     background-color: red;
+     color:white;
+     padding: 10px;
+ }
+
+ a{
+     font-size: 15px;
+     color: green;
+     text-decoration: none;
+ }
+
+ footer a{
+     color: red;
  }
