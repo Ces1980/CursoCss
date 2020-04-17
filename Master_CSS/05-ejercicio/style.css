@@ -6,9 +6,9 @@
 * (Hecho)  3- Todo el contenido debe estar dentro del contenedor general, su ancho sera de 1200px y estar centrado
 * (Hecho)  4- Header debe ocupar el 100% del ancho y tener un texto grande centrado
 * (Hecho)  5- Menu debe tener los elementos uno a lado del otro
-* 6- El contenido principal debe tener un ancho del 70%
+* (Hecho)  6- El contenido principal debe tener un ancho del 70%
 * 7- El contenido dentro del contenedor principal debe ser una cuadricula con cuatro lineas de dos cajas
-* 8- La barra lateral debe tener un ancho del 30%
+* (Hecho)  8- La barra lateral debe tener un ancho del 30%
 * 9- El footer debe tener un ancho del 100% del div que lo contiene y estar debajo del todo  
 */
 
@@ -90,4 +90,26 @@
     float: left;
     width: 30%;
     border: 1px solid red;
+}
+
+#contenido > h1{
+    /* Centrado el titulo que se encuentra dentro de section */
+    text-align: center;
+    border-bottom:1px solid #ccc;
+    /* Margen interno */
+    padding: 15px;
+    color: #444;
+}
+
+#contenido .caja{
+    width: 40%;
+    height: 250px;
+    background-color: red;
+    border: 5px solid blue;
+    color: white;
+    /* Se flotan las cajas para ubicarlas */
+    float: left;
+    margin: 20px;
+    /* Margen izquierdo de las cajas */
+    margin-left: 40px;
 }
