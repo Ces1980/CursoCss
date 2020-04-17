@@ -1,9 +1,9 @@
 /**
 *!.-Ejercicio completo con HTML yCSS
-* (Hecho )1- Crear un docuemnto HTML y vincularlo con un CSS
-* (Hecho )2- Crear una estructura HTML que cuente con un CONTENEDOR GENERAL, CABECERA, MENU, BARRA LATERAL, SECCION DE CONTENIDO PRINCIPAL
+* (Hecho)  1- Crear un docuemnto HTML y vincularlo con un CSS
+* (Hecho)  2- Crear una estructura HTML que cuente con un CONTENEDOR GENERAL, CABECERA, MENU, BARRA LATERAL, SECCION DE CONTENIDO PRINCIPAL
      ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL Y FOOTER
-* 3- Todo el contenido debe estar dentro del contenedor general, su ancho sera de 1200px y estar centrado
+* (Hecho)  3- Todo el contenido debe estar dentro del contenedor general, su ancho sera de 1200px y estar centrado
 * 4- Header debe ocupar el 100% del ancho y tener un texto grande centrado
 * 5- Menu debe tener los elementos uno a lado del otro
 * 6- El contenido principal debe tener un ancho del 70%
@@ -16,6 +16,7 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #general{
@@ -23,7 +24,22 @@
     width: 1200px;
     /* Centra el contenido */
     margin: 0px auto;
+    /* MArgen superior */
     margin-top: 20px;
     border: 1px solid #ccc;
+}
 
+#header{
+    /* Ancho de la caja */
+    width: 100%;
+    /* Alto de la caja*/
+    height: 100px;
+    /* Color de la caja */
+    background-color: blue;
+    /* Color de las letras  */
+    color: cornsilk;
+    /* Alineación del texto */
+    text-align: center;
+    /* Alineación del contenido de la caja en forma vertical  */
+    line-height: 90px;
 }
