@@ -4,7 +4,7 @@
 * (Hecho)  2- Crear una estructura HTML que cuente con un CONTENEDOR GENERAL, CABECERA, MENU, BARRA LATERAL, SECCION DE CONTENIDO PRINCIPAL
      ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL Y FOOTER
 * (Hecho)  3- Todo el contenido debe estar dentro del contenedor general, su ancho sera de 1200px y estar centrado
-* 4- Header debe ocupar el 100% del ancho y tener un texto grande centrado
+* (Hecho)  4- Header debe ocupar el 100% del ancho y tener un texto grande centrado
 * 5- Menu debe tener los elementos uno a lado del otro
 * 6- El contenido principal debe tener un ancho del 70%
 * 7- El contenido dentro del contenedor principal debe ser una cuadricula con cuatro lineas de dos cajas
@@ -12,34 +12,68 @@
 * 9- El footer debe tener un ancho del 100% del div que lo contiene y estar debajo del todo  
 */
 
-*{
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#general{
-   /*  Ancho de la página */
-    width: 1200px;
-    /* Centra el contenido */
-    margin: 0px auto;
-    /* MArgen superior */
-    margin-top: 20px;
-    border: 1px solid #ccc;
+#general {
+  /*  Ancho de la página */
+  width: 1200px;
+  /* Centra el contenido */
+  margin: 0px auto;
+  /* MArgen superior */
+  margin-top: 20px;
+  border: 1px solid #ccc;
 }
 
-#header{
-    /* Ancho de la caja */
-    width: 100%;
-    /* Alto de la caja*/
-    height: 100px;
-    /* Color de la caja */
-    background-color: blue;
-    /* Color de las letras  */
-    color: cornsilk;
-    /* Alineación del texto */
-    text-align: center;
-    /* Alineación del contenido de la caja en forma vertical  */
-    line-height: 90px;
+#header {
+  /* Ancho de la caja */
+  width: 100%;
+  /* Alto de la caja*/
+  height: 100px;
+  /* Color de la caja */
+  background-color: blue;
+  /* Color de las letras  */
+  color: cornsilk;
+  /* Alineación del texto */
+  text-align: center;
+  /* Alineación del contenido de la caja en forma vertical  */
+  line-height: 90px;
+}
+/* Limpoar los espacios entre el menú y la section*/
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+#menu {
+  background-color: #eeeeee;
+}
+/* DAndo estilo a los elementoss li que estan dentro del menú */
+#menu ul li {
+  /*Poner los elementos uno a lado del otro  display: inline-block;*/
+  /* para que los elementos se conporten de forma independiente */
+  display: block;
+  /* Flota los elementos a la izquierda */
+  float: left;
+  /* Pinta los margens entre las cajas del menú */
+  border-right: 1px solid #ccc;
+}
+#menu ul li a {
+  display: block;
+  /* MArgen interno de las cajas */
+  padding: 15px;
+  color: #444;
+}
+/* Uso de pseudoclae HOVER */
+#menu ul li:hover {
+  background-color: rgb(24, 24, 122);
+  /* Pinta un cursor cuando se este sobre la caja del elemento del menu*/
+  cursor: pointer;
+}
+#menu ul li:hover a {
+  color: white;
 }
