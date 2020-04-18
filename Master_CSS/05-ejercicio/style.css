@@ -193,3 +193,19 @@ los elementos con mayor valor z-index cubren aquellos con menor valor.*/
   el que tenga el mayor valor es la caja que se mantendra en la parte superior */
   z-index: 1;
 }
+
+.fija{
+  /* Un elemento fixed (fijo) se posiciona a la ventana del navegador de
+   manera relativa, lo que significa que se mantendrá en el mismo lugar 
+   incluso después de hacer scroll en la página.  */
+  position: fixed;
+  top:50%;
+  left: 0px;
+
+  border: 1px solid black;
+  background-color: blue;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 13px;
+}
