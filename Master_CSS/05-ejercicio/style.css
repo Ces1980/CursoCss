@@ -125,6 +125,8 @@
     text-transform: uppercase;
     /* Sobra de una caja */
     box-shadow: 5px 5px 10px gray;
+    /* Boderar las esquinas de las cajas */
+    border-radius: 100px 100px 50px 50px;
 }
 
 .sombra-interior{
