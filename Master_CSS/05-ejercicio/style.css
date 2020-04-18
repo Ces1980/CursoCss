@@ -104,19 +104,32 @@
     /* Margen interno */
     padding: 15px;
     color: #444;
+    /* Sintaxis eje de las x | eje de las y | radio de desenfoque | color */
+    text-shadow: 1px 1px 2px rgb(206, 199, 199);
 }
 
 #contenido .caja{
     width: 40%;
     height: 250px;
-    background-color: red;
-    border: 5px solid blue;
+    background-color: #ccc;
+    border: 1px solid gray;
     color: white;
     /* Se flotan las cajas para ubicarlas */
     float: left;
     margin: 20px;
     /* Margen izquierdo de las cajas */
     margin-left: 40px;
+    text-align: center;
+    line-height: 200px;
+    color:#444;
+    text-transform: uppercase;
+    /* Sobra de una caja */
+    box-shadow: 5px 5px 10px gray;
+}
+
+.sombra-interior{
+  /* Resaltadno la importancia para sobresescribir el box sadow de #contenido .caja*/
+  box-shadow: 5px 5px 30px gray inset !important;
 }
 
 #footer{
