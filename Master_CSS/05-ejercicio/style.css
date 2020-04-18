@@ -167,7 +167,7 @@ auto
 .libre{
   position: absolute;
   top:300px;
-  right: 40px;
+  left: 50%;
 
   border: 1px solid black;
   background-color: red;
@@ -176,4 +176,20 @@ auto
   height: 50px;
   font-size: 13px;
 
+}
+
+/*La propiedad CSS z-index indica el orden de un elemento posicionado y 
+sus descendientes. Cuando varios elementos se superponen, 
+los elementos con mayor valor z-index cubren aquellos con menor valor.*/
+.libre1{
+  z-index: 2;
+}
+
+.libre2{
+  background-color: green;
+  top:280px;
+  left: 55%;
+  /* El sobreposicionamiento con z-index se lo da el valor numerico
+  el que tenga el mayor valor es la caja que se mantendra en la parte superior */
+  z-index: 1;
 }
