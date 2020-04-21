@@ -1,0 +1,27 @@
+#boton{
+    width: 150px;
+    display: block;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 3px solid rgb(12, 24, 12);
+    /* Cambiar el estado a todos los atributos del elemento */
+    transition: all .5s;
+    /* Cambiar el estado a un atributo del elemento*/
+    transition:  font-weight 3s;
+    /* Cambiar el estado de varios atributos solo en los  elementos
+    que se quiera */
+    transition: border 500ms, background-color 3s, border-radius 1s;
+
+}
+
+#boton:hover{
+    border-radius: 15px;
+    background-color: orangered;
+    border: 5px solid red;
+    font-weight: inherit;
+}
