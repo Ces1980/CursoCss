@@ -1,27 +1,88 @@
-#boton{
-    width: 150px;
-    display: block;
-    padding: 20px;
-    background-color: green;
-    color: white;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    border: 3px solid rgb(12, 24, 12);
-    /* Cambiar el estado a todos los atributos del elemento */
-    transition: all .5s;
-    /* Cambiar el estado a un atributo del elemento*/
-    transition:  font-weight 3s;
-    /* Cambiar el estado de varios atributos solo en los  elementos
+#boton {
+  width: 150px;
+  display: block;
+  padding: 20px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px solid rgb(12, 24, 12);
+  /* Cambiar el estado a todos los atributos del elemento */
+  transition: all 0.5s;
+  /* Cambiar el estado a un atributo del elemento*/
+  transition: font-weight 3s;
+  /* Cambiar el estado de varios atributos solo en los  elementos
     que se quiera */
-    transition: border 500ms, background-color 3s, border-radius 1s;
-
+  transition: border 500ms, background-color 3s, border-radius 1s;
 }
 
-#boton:hover{
-    border-radius: 15px;
-    background-color: orangered;
-    border: 5px solid red;
-    font-weight: inherit;
+#boton:hover {
+  border-radius: 15px;
+  background-color: orangered;
+  border: 5px solid red;
+  font-weight: inherit;
+}
+
+#caja {
+  margin-top: 25px;
+  width: 250px;
+  height: 250px;
+  background-color: lightseagreen;
+  color: white;
+  border: 5px solid black;
+  font-size: 20px;
+  text-align: center;
+  line-height: 200px;
+  /* Las animaciones CSS3 permiten animar la transición entre 
+  un estilo CSS y otro. Las animaciones constan de dos componentes: 
+  un estilo que describe la animación CSS y un conjunto de fotogramas 
+  que indican su estado inicial y final, 
+  así como posibles puntos intermedios en la misma. */
+  /* Para crear una secuencia de animación CSS, tú estilizarás 
+  el elemento que quieras animar con la propiedad animation 
+  y sus sub-propiedades. Con ellas podemos no solo configurar el 
+  ritmo y la duración de la animación
+   sino otros detalles sobre la secuencia de la animación.  */
+  /* Forma en que se da la animación */
+  animation-name: desplazamiento;
+  /* Duración de la animación */
+  animation-duration: 10s;
+  /* Por cuanto tiempo se da la animación */
+  animation-iteration-count: infinite;
+  /* Se especifica la temporalización del objeto que se esta animando 
+  en cuanto a la velocidad del movimiento */
+  animation-timing-function: linear;
+}
+/* Los @KeyFrames permiten configurar el tiempo de animación y que
+propiedades se van a tener al principio, 
+intermedio o al final y al final */
+@keyframes desplazamiento {
+  0% {
+    margin-left: 0px;
+    transform: rotate(0deg);
+  }
+  25% {
+    margin-left: 0px;
+    background-color: rgb(185, 90, 34);
+    border: 20px groove rgb(155, 113, 113);
+    transform: rotate(90deg);
+  }
+  50% {
+    margin-left: 1200px;
+    background-color: rgb(83, 64, 57);
+    border: 100px dotted white;
+    transform: rotate(180deg);
+    border-radius: 999px;
+  }
+  75% {
+    margin-left: 0px;
+    background-color: rgb(185, 90, 34);
+    border: 20px groove rgb(155, 113, 113);
+    transform: rotate(270deg);
+  }
+  100% {
+    margin-left: 0px;
+  }
 }
