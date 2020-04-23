@@ -1,11 +1,7 @@
 /* Fuentes */
 @font-face {
   font-family: "nevis";
-  src: url("../css/fonts/nevis.eot");
-  src: url("../css/fonts/nevis.eot?#iefix") format("embedded-opentype"),
-    ("../css/fonts/nevis.woff") format("woff"),
-    ("../css/fonts/nevis.ttf") format("truetype"),
-    ("../css/fonts/nevis.svg") format("svg");
+  src: url("../css/fonts/nevis.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -43,6 +39,10 @@ a:hover {
 
 .blue {
   color: #0c73f2 !important;
+}
+
+.orange{
+  color:#d69d2a !important;
 }
 /* FORMULARIOS */
 input[type="text"],
@@ -243,7 +243,7 @@ body {
 }
 
 #frase {
-  clear: both;
+  /* clear: both; */
   width: 180px;
   padding: 10px;
   font-size: 14px;
@@ -327,6 +327,7 @@ body {
   font-family: "fajala";
   letter-spacing: 1px;
   text-align: center;
+  margin-top: -20px;
   padding-top: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
@@ -354,3 +355,17 @@ body {
   font-size: 14px;
 
 }
+
+/* Estilos a las pegatinas */
+
+#sections .stikerOne,
+#sections .stikerTwo{
+  position: absolute;
+  margin-top: -38px;
+  z-index: 0;
+}
+
+#sections .stikerTwo{
+  margin-left: 860px;
+}
+
