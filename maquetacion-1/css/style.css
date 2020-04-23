@@ -55,6 +55,11 @@ a:hover {
 .orange{
   color:#d69d2a !important;
 }
+
+.clearfix{
+  float: none;
+  clear: both;
+}
 /* FORMULARIOS */
 input[type="text"],
 input[type="email"],
