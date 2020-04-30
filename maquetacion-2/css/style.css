@@ -37,7 +37,7 @@ body {
 }
 
 .wrap {
-  width: 1200px;
+  width: 1250px;
   margin: 0px auto;
 }
 
@@ -115,7 +115,7 @@ body {
 
 /* Banner */
 #banner {
-  width: 100%;
+  width: 95.5%;
   height: 96px;
   border: 10px solid white;
   box-shadow: 0px 0px 2px grey;
@@ -135,4 +135,23 @@ body {
   text-shadow: 2px 2px 1px black;
   margin: 27px auto;
   text-align: center;
+}
+
+/* Tarjetas */
+.card {
+  float: left;
+  width: 205px;
+  height: 305px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 2px #ddd;
+  background-color: white;
+  /* El contenido es recortado y no se muestran barras de posición. */
+  overflow: hidden;
+  margin: 22px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.card:last-child {
+  margin-right: 0px;
 }
