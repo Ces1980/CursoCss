@@ -72,6 +72,12 @@ body {
   transition: all 300ms;
 }
 
+#logo:hover {
+  border-radius: 2px;
+  color: black;
+  background-color: #ccc;
+}
+
 #logo .gear {
   display: block;
   float: left;
@@ -98,6 +104,25 @@ body {
   to {
     /* En que punto termina en grados empieza a rotar el elemento  */
     transform: rotateZ(360deg);
+  }
+}
+
+/* Animación cuando se realiza el efecto del hover */
+#logo:hover .gear {
+  /*  animation: nombreAnimación tiempoAnimación tipoAlineación; */
+  animation: fromBellow 500ms linear;
+}
+
+@keyframes fromBellow {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(0%);
   }
 }
 
