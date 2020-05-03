@@ -135,6 +135,21 @@ body {
   transition: all 300ms;
 }
 
+/* Animación cuando se realiza el efecto del hover */
+#logo:hover h3 {
+  /*  animation: nombreAnimación tiempoAnimación tipoAlineación; */
+  animation: fromRight 500ms linear;
+}
+
+@keyframes fromRight {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
 /* Estilos al menú */
 
 #menu {
