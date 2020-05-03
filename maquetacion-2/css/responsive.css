@@ -236,3 +236,56 @@
     font-size: 16px;
   }
 }
+
+@media (max-width: 544px) {
+  #banner {
+    line-height: 20px;
+    height: 83px;
+  }
+  #lateral input[type="text"] {
+    width: 91%;
+  }
+
+  .card .gear {
+    width: 96%;
+    height: 112px;
+  }
+  .card:hover .gear {
+    font-size: 42px;
+  }
+
+  #login a {
+    margin-left: 44px;
+  }
+
+  #footer h5 {
+    font-size: 37px;
+  }
+}
+
+@media (max-width: 475px) {
+  #banner {
+    height: 83px;
+  }
+  #banner h1 {
+    font-size: 20px;
+  }
+  #lateral input[type="text"] {
+    width: 89%;
+  }
+
+  #login input[type="email"],
+  #login input[type="password"] {
+    width: 82%;
+  }
+
+  #login a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 43px;
+  }
+
+  #articles article {
+    width: 95%;
+  }
+}
