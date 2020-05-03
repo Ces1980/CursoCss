@@ -1,0 +1,17 @@
+/* BREAKPOINTS
+* Nuestros puntos de interrupción (BREAKPOINTS) se basan en anchos de pantalla
+* donde nuestro contenido comienza a romperse. Nuestros puntos de interrupción
+* pueden cambiar a medida que trasladamos más producto a diseños receptivos.
+*/
+@media (max-width: 1250px) {
+  /* Las cajas principales de la página estan declaradas con la clase .wrap(contenido de : header, section, footer) */
+  .wrap {
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .card {
+    width: 17%;
+    margin: 1.4%;
+  }
+}
