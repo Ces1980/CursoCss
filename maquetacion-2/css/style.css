@@ -78,6 +78,27 @@ body {
   font-size: 30px;
   margin-top: 8px;
   margin-left: 26px;
+  /* animation-name especifica una lista de animaciones que se deben aplicar al elemento seleccionado */
+  animation-name: rotate-gear;
+  /* indica la cantidad de tiempo que la animación tarda en completar un ciclo (duración). */
+  animation-duration: 2s;
+  /* define el numero de veces que un ciclo de animación debe ser ejecutado antes de detenerse. */
+  animation-iteration-count: infinite;
+  /* especifica cómo una animación CSS debe avanzar sobre la duración de cada ciclo */
+  animation-timing-function: linear;
+}
+
+/* Nombre de la animación especificada en los estilos al elemento */
+@keyframes rotate-gear {
+  /* Inicio de la rotación */
+  from {
+    /* En que punto en grados empieza a rotar el elemento */
+    transform: rotateZ(0deg);
+  }
+  to {
+    /* En que punto termina en grados empieza a rotar el elemento  */
+    transform: rotateZ(360deg);
+  }
 }
 
 #logo h3 {
