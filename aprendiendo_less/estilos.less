@@ -55,3 +55,30 @@ h1{
 .informacion1{
     .sombras(10px);
 }
+
+//Operadores
+h1{
+    font-size:  30px + 7px;
+}
+
+//Mixins condicionales
+.textoNegro(@value) when (@value=negro){
+    color: black;
+}
+
+h1{
+    color: blue;
+    .textoNegro(negro);
+}
+
+//Bucles
+
+.loop(@cont) when (@cont > 0){
+    .loop((@cont - 1));
+    height: ((900px/2) / @cont);
+}
+
+.informacion{
+    height: 900px;
+    .loop(5);
+}
