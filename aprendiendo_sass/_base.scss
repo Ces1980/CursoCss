@@ -1,0 +1,49 @@
+$fuente-tipica: sans-sefir, Helvetica, Arial;
+$color_fondo: #ccc;
+$color_letra: red;
+$color_secundario: rgb(26, 5, 5);
+$color_azul: blue;
+$color_verde: green;
+$color_negro: black;
+$color_blanco: white;
+$color_naranja: orange;
+
+body {
+  background-color: $color_fondo;
+}
+
+h1 {
+  font-family: $fuente-tipica;
+  color: $color_letra;
+}
+
+p {
+  color: $color_secundario;
+}
+
+.caja {
+  border: 2px solid $color_negro;
+  width: 500px;
+  margin: 0px auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background-color: $color_blanco;
+
+  h1 {
+    color: $color_azul;
+  }
+
+  p {
+    color: $color_verde;
+  }
+
+  .info {
+    font-size: 30px;
+  }
+
+  .author {
+    font-size: 20px;
+    color: $color_naranja;
+  }
+}
