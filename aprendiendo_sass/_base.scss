@@ -132,3 +132,20 @@ $wrap: 900px;
   width: $caja / $wrap * 100%;
   margin: 10px;
 }
+
+//Condicionales - if
+
+h1 {
+  @if $color_fondo != #ccc {
+    color: $color_negro;
+  } @else if $color_fondo == black {
+    color: lightsalmon;
+  } @else {
+    color: pink;
+  }
+}
+//Bucles
+
+//Each
+
+//While
