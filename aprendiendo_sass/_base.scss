@@ -1,3 +1,4 @@
+//Variables
 $fuente-tipica: sans-sefir, Helvetica, Arial;
 $color_fondo: #ccc;
 $color_letra: red;
@@ -8,6 +9,7 @@ $color_negro: black;
 $color_blanco: white;
 $color_naranja: orange;
 
+// Uso de variables
 body {
   background-color: $color_fondo;
 }
@@ -21,6 +23,7 @@ p {
   color: $color_secundario;
 }
 
+// Anidación
 .caja {
   border: 2px solid $color_negro;
   width: 500px;
@@ -46,4 +49,34 @@ p {
     font-size: 20px;
     color: $color_naranja;
   }
+}
+
+//Mixins - funciones
+
+// @mixin nombrar la funcion --> puede o no llevar parametros
+//@include mandar llamar la función
+@mixin crearBordes($color, $size, $shadow) {
+  border: $size solid $color;
+  border-radius: $size;
+  box-shadow: 0px 0px $size $shadow;
+}
+
+@mixin crearBordes2() {
+  border: 5px solid $color_negro;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px $color_negro;
+}
+
+.caja {
+  @include crearBordes($color_naranja, 10px, $color_negro);
+}
+
+.listado {
+  @include crearBordes2();
+  font-family: $fuente-tipica;
+  width: 500px;
+  margin: 0px auto;
+  margin-top: 20px;
+  color: $color_azul;
+  background-color: $color_blanco;
 }
