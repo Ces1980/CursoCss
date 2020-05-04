@@ -1,0 +1,3 @@
+Comando para compilar archivos de sass
+
+            sass --watch origen.scss:destino.css
