@@ -1,0 +1,8 @@
+
+Instrucción para compilar less
+
+archivo.less aplica estilos a archivo.css
+        lessc styles.less styles.css
+
+
+Esta instruccion se debe de ejecutar cada que se quiera compilar less
