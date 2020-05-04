@@ -1,7 +1,8 @@
 //Variables
 $fuente-tipica: sans-sefir, Helvetica, Arial;
-$color_fondo: #ccc;
+$color_fondo: rgb(109, 98, 98);
 $color_letra: red;
+$color_rojo: rgb(122, 31, 31);
 $color_secundario: rgb(26, 5, 5);
 $color_azul: blue;
 $color_verde: green;
@@ -79,4 +80,32 @@ p {
   margin-top: 20px;
   color: $color_azul;
   background-color: $color_blanco;
+}
+
+// Herencia
+%alert-normal {
+  border: 1px solid gray;
+  background-color: #ccc;
+  color: $color_negro;
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+.alert {
+  @extend %alert-normal;
+}
+
+.alert-danger {
+  @extend %alert-normal;
+  color: $color_rojo;
+  border: 15px solid $color_rojo;
+}
+
+.alert-success {
+  @extend %alert-normal;
+  color: $color_verde;
+  border: 15px solid $color_verde;
 }
