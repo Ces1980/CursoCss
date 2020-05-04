@@ -144,8 +144,17 @@ h1 {
     color: pink;
   }
 }
-//Bucles
 
-//Each
+//FOR
+$contador: 1;
 
-//While
+@for $contador from 1 through 15 {
+  .listado ul li:nth-child(#{$contador}) {
+    font-size: $contador * 3px;
+    color: orange;
+
+    @if $contador > 8 {
+      color: $color_rojo;
+    }
+  }
+}

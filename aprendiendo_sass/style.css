@@ -78,6 +78,73 @@ h1 {
 h1 {
   color: black; }
 
+.listado ul li:nth-child(1) {
+  font-size: 3px;
+  color: orange; }
+
+.listado ul li:nth-child(2) {
+  font-size: 6px;
+  color: orange; }
+
+.listado ul li:nth-child(3) {
+  font-size: 9px;
+  color: orange; }
+
+.listado ul li:nth-child(4) {
+  font-size: 12px;
+  color: orange; }
+
+.listado ul li:nth-child(5) {
+  font-size: 15px;
+  color: orange; }
+
+.listado ul li:nth-child(6) {
+  font-size: 18px;
+  color: orange; }
+
+.listado ul li:nth-child(7) {
+  font-size: 21px;
+  color: orange; }
+
+.listado ul li:nth-child(8) {
+  font-size: 24px;
+  color: orange; }
+
+.listado ul li:nth-child(9) {
+  font-size: 27px;
+  color: orange;
+  color: #7a1f1f; }
+
+.listado ul li:nth-child(10) {
+  font-size: 30px;
+  color: orange;
+  color: #7a1f1f; }
+
+.listado ul li:nth-child(11) {
+  font-size: 33px;
+  color: orange;
+  color: #7a1f1f; }
+
+.listado ul li:nth-child(12) {
+  font-size: 36px;
+  color: orange;
+  color: #7a1f1f; }
+
+.listado ul li:nth-child(13) {
+  font-size: 39px;
+  color: orange;
+  color: #7a1f1f; }
+
+.listado ul li:nth-child(14) {
+  font-size: 42px;
+  color: orange;
+  color: #7a1f1f; }
+
+.listado ul li:nth-child(15) {
+  font-size: 45px;
+  color: orange;
+  color: #7a1f1f; }
+
 h1 {
   text-decoration: underline; }
 
