@@ -8,4 +8,22 @@ h1 {
 p {
   color: #1a0505; }
 
+.caja {
+  border: 2px solid black;
+  width: 500px;
+  margin: 0px auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background-color: white; }
+  .caja h1 {
+    color: blue; }
+  .caja p {
+    color: green; }
+  .caja .info {
+    font-size: 30px; }
+  .caja .author {
+    font-size: 20px;
+    color: orange; }
+
 /*# sourceMappingURL=style.css.map */
