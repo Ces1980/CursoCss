@@ -10,11 +10,6 @@ body {
   padding: 3px;
 }
 
-/* La propiedad flex-grow de CSS especifica el factor de crecimiento de un elemento flexible (que tiene asignado display:flex),
-en su dirección principal. El factor de crecimiento especifica qué cantidad del espacio restante dentro del contenedor flexible,
- debería ocupar el item en cuestión. */
-
-/* La caja padre(#layout) debe de tener habilitada la propiedad display con el valor flex */
 .caja {
   flex-grow: 1;
   font-size: 20px;
@@ -36,7 +31,14 @@ en su dirección principal. El factor de crecimiento especifica qué cantidad de
   flex-grow: 4;
   background-color: green;
 }
+
+/* La propiedad CSS flex-shrink especifica el factor de contracción de un flex item.
+Los flex items se encogerán para llenar el contenedor de acuerdo a su número flex-shrink ,
+cuando el tamaño por defecto de los flex items sea mayor al de su contenedor flex container. */
+
 .blue {
+  flex-grow: 0;
+  flex-shrink: 0;
   background-color: blue;
 }
 .orange {
