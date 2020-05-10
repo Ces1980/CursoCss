@@ -3,14 +3,8 @@ body {
   text-align: center;
 }
 
-/* La propiedad flex-wrap de CSS  especifica si los elementos "hijos" son obligados a permanecer en una misma línea o
-pueden fluir en varias líneas. Si la cobertura (wrap) está permitida, esta propiedad también te permite controlar
-la dirección en la cual serán apilados los elementos. */
 #layout {
   display: flex;
-  /* flex-direction: row;
-  flex-wrap: wrap; */
-  /* La propiedad CSS flex-flow  es una propiedad atajo para las propiedades individuales flex-direction y flex-wrap. */
   flex-flow: row wrap;
   border: 3px solid black;
   padding: 3px;
@@ -27,15 +21,22 @@ la dirección en la cual serán apilados los elementos. */
   background-color: gray;
 }
 
+/* La propiedad CSS order especifica el orden utilizado para disponer los elementos en su contenedor flexible.
+Los elementos estarán dispuestos en orden ascendente según el valor de order.
+Los elementos con el mismo valor de order se dispondrán en el orden en el cual aparecen en el código fuente. */
 .red {
+  order: 4;
   background-color: red;
 }
 .green {
+  order: 3;
   background-color: green;
 }
 .blue {
+  order: 2;
   background-color: blue;
 }
 .orange {
+  order: 1;
   background-color: orange;
 }
