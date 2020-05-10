@@ -6,15 +6,22 @@ body {
 
 #layout {
   display: flex;
+  /*
+  flex-direction: row;
+  flex-wrap: wrap;
+  */
   flex-flow: row wrap;
+  /*
+  La propiedad CSS justify-content define cómo el navegador distribuye el espacio entre
+  y alrededor de los items flex, a lo largo del eje principal de su contenedor.
+  https://developer.mozilla.org/es/docs/Web/CSS/justify-content
+  */
+  justify-content: space-evenly;
   border: 3px solid black;
   padding: 3px;
 }
 
 .caja {
-  flex-basis: calc((100% / 3) - 68px);
-  flex-basis: 25%;
-  flex-grow: 1;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -34,7 +41,7 @@ body {
 .blue {
   background-color: blue;
 }
+
 .orange {
-  flex-basis: 100%;
   background-color: orange;
 }
