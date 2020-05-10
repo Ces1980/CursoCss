@@ -10,7 +10,13 @@ body {
   padding: 3px;
 }
 
+/* La propiedad flex-grow de CSS especifica el factor de crecimiento de un elemento flexible (que tiene asignado display:flex),
+en su dirección principal. El factor de crecimiento especifica qué cantidad del espacio restante dentro del contenedor flexible,
+ debería ocupar el item en cuestión. */
+
+/* La caja padre(#layout) debe de tener habilitada la propiedad display con el valor flex */
 .caja {
+  flex-grow: 1;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -21,22 +27,19 @@ body {
   background-color: gray;
 }
 
-/* La propiedad CSS order especifica el orden utilizado para disponer los elementos en su contenedor flexible.
-Los elementos estarán dispuestos en orden ascendente según el valor de order.
-Los elementos con el mismo valor de order se dispondrán en el orden en el cual aparecen en el código fuente. */
+/* Se puede ajustar con flex-grow el tamaño de las cajas que se encuentran dentro del contenedor padre*/
 .red {
-  order: 4;
+  flex-grow: 5;
   background-color: red;
 }
 .green {
-  order: 3;
+  flex-grow: 4;
   background-color: green;
 }
 .blue {
-  order: 2;
   background-color: blue;
 }
 .orange {
-  order: 1;
+  flex-grow: 5;
   background-color: orange;
 }
