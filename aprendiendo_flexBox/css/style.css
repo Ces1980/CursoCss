@@ -11,17 +11,17 @@ body {
   flex-wrap: wrap;
   */
   flex-flow: row wrap;
-  /*
-  La propiedad CSS justify-content define cómo el navegador distribuye el espacio entre
-  y alrededor de los items flex, a lo largo del eje principal de su contenedor.
-  https://developer.mozilla.org/es/docs/Web/CSS/justify-content
-  */
   justify-content: space-evenly;
+
+  height: 600px;
+  align-items: flex-start;
+
   border: 3px solid black;
   padding: 3px;
 }
 
 .caja {
+  flex-wrap: 1;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -32,16 +32,25 @@ body {
   background-color: gray;
 }
 
+/* La propiedad CSS align-self alinea los elementos flexibles de la línea flexible actual,
+ reemplazando el valor de align-items. Si el límite transversal de alguno de los elementos
+ está definido como auto, el valor de align-self es ignorado. */
+
 .red {
+  align-self: flex-start;
   background-color: var(--rojo);
 }
 .green {
+  /* margin-top: 10%; */
+  align-self: center;
   background-color: green;
 }
 .blue {
+  align-self: center;
   background-color: blue;
 }
 
 .orange {
+  align-self: flex-end;
   background-color: orange;
 }
