@@ -3,7 +3,12 @@ body {
   text-align: center;
 }
 
+/* Selector que contiene las instrucciones para manipular los elementos para que flexbox las pueda manipular */
+/* flex y inline-flex ambos aplican el diseño flexible a los hijos del contenedor.
+El contenedor con display:flex se comporta como un elemento a nivel de bloque, mientras que display:inline-flex hace que el contenedor se comporte como un elemento en línea. */
 #layout {
+  /* display: inline-flex; */
+  display: flex;
   border: 3px solid black;
   padding: 3px;
 }
