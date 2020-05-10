@@ -3,21 +3,15 @@ body {
   text-align: center;
 }
 
-/* Cuando trabajamos con flexbox necesitamos pensar en términos de dos ejes — el eje principal y el eje cruzado.
-El eje principal está definido por la propiedad flex-direction, y el eje cruzado es perpendicular a este.
-Todo lo que hacemos con flexbox está referido a estos dos ejes, por lo que vale la pena entender cómo trabajan desde el principio. */
+/* La propiedad flex-wrap de CSS  especifica si los elementos "hijos" son obligados a permanecer en una misma línea o
+pueden fluir en varias líneas. Si la cobertura (wrap) está permitida, esta propiedad también te permite controlar
+la dirección en la cual serán apilados los elementos. */
 #layout {
-  display: inline-flex;
-  /*
-  El eje principal está definido por flex-direction, que posee cuatro posibles valores:
-
-    row: el eje principal correrá a lo largo de la fila según la dirección de la línea .
-    row-reverse: El eje cruzado va perpendicular al eje principal, y por lo tanto si flex-direction (del eje principal) es row o row-reverse el eje cruzado irá por las columnas.
-    column: el eje cruzado ira por las columnas según la dirección de la línea
-    column-reverse: el eje principal correrá desde el borde superior de la página hasta el final — según la dirección del bloque.
-
-   */
-  flex-direction: row;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  /* La propiedad CSS flex-flow  es una propiedad atajo para las propiedades individuales flex-direction y flex-wrap. */
+  flex-flow: row wrap;
   border: 3px solid black;
   padding: 3px;
 }
