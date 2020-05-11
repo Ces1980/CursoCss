@@ -26,6 +26,7 @@
 }
 
 .logo {
+  flex-grow: 1; /* especifica el factor de crecimiento de un elemento flexible (que tiene asignado display:flex), en su dirección principal.  */
   flex-basis: 65%; /* Determinar el tamaño inicila de un elemento flexible */
 
   padding: 10px;
@@ -40,4 +41,33 @@
   font-style: italic;
   font-weight: 900;
   font-size: 35px;
+}
+
+#menu {
+  flex-grow: 1;
+  flex-basis: 30%;
+  height: 100%; /* Ocupa el 100% de la caja */
+  padding-right: 20px;
+}
+
+#menu ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; /* Los márgenes del elemento flexible son centrados dentro de la línea sobre su eje transversal. Si el tamaño transversal del elemento es mayor al del contenedor, se excederá por igual hacia ambas direcciones. */
+  justify-content: space-between; /*Los items flex se distribuyen uniformemente sobre la línea. El espaciamiento se hace de tal manera que el espacio adyacente entre dos items es el mismo. El borde del comienzo principal y el borde del final principal se alinean al ras con el borde del primer y último item respectivamente.  */
+  list-style: none; /* Quita el estilo que identifica al elemento como parte de una lista */
+  height: 100%;
+}
+
+#menu a {
+  text-transform: uppercase;
+  color: #444;
+  padding: 15px;
+  transition: all 300ms;
+}
+
+#menu a:hover {
+  background-color: #ccc;
+  color: white;
 }
