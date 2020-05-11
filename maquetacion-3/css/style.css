@@ -29,6 +29,11 @@
   flex-grow: 1; /* especifica el factor de crecimiento de un elemento flexible (que tiene asignado display:flex), en su dirección principal.  */
   flex-basis: 65%; /* Determinar el tamaño inicila de un elemento flexible */
 
+  font-style: Helvetica;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 35px;
+
   padding: 10px;
   margin-left: 20px;
   color: black;
@@ -163,4 +168,30 @@
 #aside a:hover {
   background-color: #444;
   color: white;
+}
+
+#footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
+  height: 120px;
+  align-items: center;
+  border-top: 1px solid rgba(225, 225, 226, 0.8);
+}
+
+#footer .logo {
+  order: 2;
+  opacity: 0.5;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: right;
+  margin-right: 30px;
+}
+
+#footer .info {
+  order: 1;
+  flex-grow: 1;
+  margin-left: 30px;
+  color: #444;
 }
