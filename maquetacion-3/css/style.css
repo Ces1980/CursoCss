@@ -2,7 +2,7 @@
   text-decoration: none;
   margin: 0px;
   padding: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
 }
 
 #container {
@@ -14,4 +14,30 @@
   margin-top: 40px; /* Margen superior */
   margin-bottom: 40px; /* Margen inferior */
   min-height: 600px; /* Altura minima a la caja */
+}
+
+#header {
+  display: flex; /* Contenido dentro del header se le podran implementar propiedades de flex */
+  flex-direction: row; /* Ubicación del contenido en fila*/
+  flex-wrap: wrap; /*Contenido no se salga de la caja; si la caja es desbordada el contenido lo coloca en una siguiente fila  */
+  align-items: center; /* Centrado vertical */
+  height: 120px;
+  border-bottom: 1px solid rgba(225, 225, 226, 0.8); /* Estilos del borde */
+}
+
+.logo {
+  flex-basis: 65%; /* Determinar el tamaño inicila de un elemento flexible */
+
+  padding: 10px;
+  margin-left: 20px;
+  color: black;
+  text-shadow: 1px 1px 0px #ccc;
+  text-transform: uppercase; /* Cambiar el las letras que se encuentren en minusculas en mayusculas */
+}
+
+.logo h1 {
+  font-style: Helvetica;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 35px;
 }
