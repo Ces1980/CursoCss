@@ -1,0 +1,17 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  width: 90%; /*Ancho de la página -> ocupa el 90 del 100% del ancho de la pantalla permitiendo dejar margenes laterales */
+  height: auto; /* Altura automatica: la altura se va adaptando al contenido que se vaya incrustando a la página */
+  margin: 0px auto; /* Grueso de margenes y tamaño en automatico */
+  border: 1px solid rgba(225, 225, 226, 0.8); /* Estilos del borde */
+  box-shadow: 0px 0px 10px #ccc; /* Sombras a la caja */
+  margin-top: 40px; /* Margen superior */
+  margin-bottom: 40px; /* Margen inferior */
+  min-height: 600px; /* Altura minima a la caja */
+}
