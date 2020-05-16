@@ -8,11 +8,14 @@ body {
   margin: 0px auto;
 
   /* Definir el contenedor GRID */
-  display: grid; /* El contenido que se encuentra dentro de layout sera el que se ha elegido para modificar con GRID */
-  /* grid-template-columns: calc(50% - 10px) calc(50% - 10px); Definiendo el tamaño de doscolumnas */
-  /* grid-template-columns: 25% 25% 25% 25%; Definiendo el tamaño de 4 columnas */
-  grid-template-columns: 50% 50%;
-  grid-gap: 10px; /*Da margenes top y botton entre los elementos  */
+  display: grid;
+  /* grid-template-columns: repeat(4, calc(25% - 10px)); Definiendo 4 columnas */
+  /* grid-template-columns: repeat(2, calc(25% - 10px)) 15% 35%; */
+  /*  la unidad especial fr (fraction), que simboliza una fracción de espacio restante en el grid. */
+  /* 1fr Acomoda una caja sobre la otra  -> 1fr 1fr acomoda 2 filas y 2 columnas  ->1fr 1fr 1fr acomoda 3 columnas*/
+  /* grid-template-columns: 1fr 1fr 1fr 1fr;  */
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
   padding: 10px;
   border: 3px solid orangered;
 }
