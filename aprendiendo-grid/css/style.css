@@ -4,6 +4,16 @@ body {
 }
 
 .layout {
+  width: 1200px;
+  margin: 0px auto;
+
+  /* Definir el contenedor GRID */
+  display: grid; /* El contenido que se encuentra dentro de layout sera el que se ha elegido para modificar con GRID */
+  /* grid-template-columns: calc(50% - 10px) calc(50% - 10px); Definiendo el tamaño de doscolumnas */
+  /* grid-template-columns: 25% 25% 25% 25%; Definiendo el tamaño de 4 columnas */
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px; /*Da margenes top y botton entre los elementos  */
+  padding: 10px;
   border: 3px solid orangered;
 }
 
@@ -13,7 +23,6 @@ body {
   color: white;
   padding: 20px;
   border: 4px solid black;
-  margin: 10px;
   background-color: gray;
 }
 
