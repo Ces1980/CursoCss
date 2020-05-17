@@ -5,18 +5,24 @@ body {
 /* .........................EJERCICIO COMPLETO.................................. */
 
 #website {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: 20% 10% 60% 10%; */
+  grid-template-rows: 150px 70px 1fr 70px;
   width: 75%;
-  height: 100vh;
+  height: 1000px;
   margin: 0px auto;
   border: 1px solid #ccc;
 }
 
 #cabecera {
+  grid-column: 1 / 6;
   background-color: blue;
   color: white;
 }
 
 #menu {
+  grid-column: 1 / 6;
   background-color: lightblue;
   color: black;
 }
@@ -25,6 +31,7 @@ body {
 }
 
 #contenido {
+  grid-column: 1 / 5;
   background-color: #eeee;
 }
 
@@ -34,11 +41,13 @@ body {
 }
 
 #lateral {
+  grid-column: 5 / 6;
   background-color: orange;
   color: white;
 }
 
 #pie-pagina {
+  grid-column: 1 / 6;
   background-color: black;
   color: white;
 }
