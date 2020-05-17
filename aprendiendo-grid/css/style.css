@@ -13,6 +13,8 @@ body {
   grid-template-columns: repeat(5, 1fr);
   /* grid-template-rows: 20% 10% 60% 10%; */
   grid-template-rows: 150px 70px 1fr 70px;
+
+  justify-content: center;
   width: 75%;
   height: 1000px;
   margin: 0px auto;
@@ -20,14 +22,12 @@ body {
 }
 
 #cabecera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column: 1 / 6;
   background-color: blue;
   color: white;
-}
-
-#cabecera h1 {
-  text-align: center;
-  line-height: 150px;
 }
 
 #menu {
