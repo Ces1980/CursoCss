@@ -5,17 +5,13 @@ body {
 
 .layout {
   width: 1200px;
-  height: 400px;
+  min-height: 400px;
   margin: 0px auto;
 
   /* Definir el contenedor GRID */
   display: grid;
-  /* grid-template-columns: repeat(4, calc(25% - 10px)); Definiendo 4 columnas */
-  /* grid-template-columns: repeat(2, calc(25% - 10px)) 15% 35%; */
-  /*  la unidad especial fr (fraction), que simboliza una fracción de espacio restante en el grid. */
-  /* 1fr Acomoda una caja sobre la otra  -> 1fr 1fr acomoda 2 filas y 2 columnas  ->1fr 1fr 1fr acomoda 3 columnas*/
-  /* grid-template-columns: 1fr 1fr 1fr 1fr;  */
-  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr) 3fr;
 
   /* Espacio entre elementos GRID */
@@ -34,21 +30,29 @@ body {
 }
 
 .layout .red {
+  /* Toma el ancho declarado de filas y columnas es decir: el contenedor grid es de 3 columnas tres filas y la caja roja tomara el
+  ancho de la primer fila desde la línea 1 hasta la tres de las columnas */
+  grid-column-start: 1;
+  grid-column-end: 4;
   background-color: red;
 }
 .layout .blue {
   background-color: blue;
+  grid-column: 2 / 4;
 }
 .layout .green {
   background-color: green;
 }
 .layout .pink {
   background-color: pink;
+  grid-column: 1/ 3;
 }
 
 .layout .orange {
   background-color: orange;
 }
 .layout .lightblue {
+  grid-column: 1 / 4; /* Atajo que permite usar las insutrucciones   /* grid-column-start: 1;
+  grid-column-end: 3;  en una sola */
   background-color: lightblue;
 }
