@@ -5,14 +5,14 @@ body {
 
 .layout {
   width: 1200px;
-  min-height: 400px;
+  min-height: 600px;
   margin: 0px auto;
 
   /* Definir el contenedor GRID */
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr) 3fr;
+  grid-template-rows: repeat(2, 1fr) 3fr repeat(2, 1fr);
 
   /* Espacio entre elementos GRID */
   grid-gap: 10px;
@@ -36,23 +36,27 @@ body {
   grid-column-end: 4;
   background-color: red;
 }
+.layout .green {
+  background-color: green;
+  /* Se indica el tamaño de la caja señalando desde que línea empieza y hasta que línea termina */
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
 .layout .blue {
   background-color: blue;
   grid-column: 2 / 4;
 }
-.layout .green {
-  background-color: green;
-}
 .layout .pink {
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
   background-color: pink;
-  grid-column: 1/ 3;
 }
 
 .layout .orange {
+  grid-row: 3 / 5;
   background-color: orange;
 }
 .layout .lightblue {
-  grid-column: 1 / 4; /* Atajo que permite usar las insutrucciones   /* grid-column-start: 1;
-  grid-column-end: 3;  en una sola */
+  grid-column: 2 / 4;
   background-color: lightblue;
 }
