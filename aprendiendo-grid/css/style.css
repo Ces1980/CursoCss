@@ -3,6 +3,10 @@ body {
   text-align: center;
 }
 /* .........................EJERCICIO COMPLETO.................................. */
+#website * {
+  margin: 0px;
+  padding: 0px;
+}
 
 #website {
   display: grid;
@@ -21,28 +25,47 @@ body {
   color: white;
 }
 
+#cabecera h1 {
+  text-align: center;
+  line-height: 150px;
+}
+
 #menu {
   grid-column: 1 / 6;
   background-color: lightblue;
   color: black;
 }
+
+#menu ul {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  list-style: none;
+}
 #menu a {
   text-decoration: none;
+  line-height: 60px;
 }
 
 #contenido {
   grid-column: 1 / 5;
+  /* Los elementos de la caja #contenido tambien pueden ser distribuidos con grid*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding: 20px;
   background-color: #eeee;
 }
 
 #contenido article {
   background-color: #ccc;
   border: 1px solid #555;
+  padding-top: 20px;
 }
 
 #lateral {
   grid-column: 5 / 6;
   background-color: orange;
+  padding-top: 20px;
   color: white;
 }
 
@@ -50,6 +73,7 @@ body {
   grid-column: 1 / 6;
   background-color: black;
   color: white;
+  line-height: 50px;
 }
 
 /* .........................EJEMPLOS.................................. */
