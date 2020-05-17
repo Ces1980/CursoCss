@@ -24,6 +24,8 @@ body {
     "articulo articulo articulo articulo lateral"
     "pie pie pie pie pie";
 
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
   justify-content: center;
   width: 75%;
   height: 1000px;
@@ -63,6 +65,7 @@ body {
   display: grid;
   grid-area: articulo;
   grid-template-columns: repeat(3, 1fr);
+  /* La propiedad grid-gap define el tamaño del espacio entre las filas y columnas en un diseño de cuadrícula, y es una propiedad abreviada de las siguientes propiedades: grid-column-gap  y  grid-row-gap */
   grid-gap: 25px;
   padding: 20px;
   background-color: #eeee;
