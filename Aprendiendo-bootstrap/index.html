@@ -38,7 +38,11 @@
                 <!-- class= "row" -> Organiza el continido en una sola fila y acomoda los espacio de forma automatica -->
                 <div class="row">
                   <div class="item col bg-primary m-2">
-                    Producto
+                    <h4 class="font-weight-bold">Producto</h4>
+                    <p class="font-weight-normal">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quaerat, ullam?
+                    </p>
                   </div>
                   <div class="item col bg-warning m-2">
                     Producto
@@ -48,7 +52,7 @@
                   </div>
                 </div>
                 <!-- Si no se depositara el contenido dentro de otro contenedor con la clase row los div se colocarian uno sobre otro y no uno a lado del otro -->
-                <div class="row mt-5">
+                <div class="row mt-1">
                   <div class="item col bg-primary m-2">
                     Producto
                   </div>
@@ -60,6 +64,19 @@
                   </div>
                   <!-- La caja toma el tamaño señalado y las cajas que comparten row se adaptan al ancho del contenedor  -->
                   <div class="item col-6 bg-success m-2">
+                    Producto
+                  </div>
+                </div>
+                <!-- Distribuir las cajas lateralmente con  justify-content-->
+                <!-- <div class="row mt-1 justify-content-between"></div> -->
+                <div class="row mt-1 justify-content-around">
+                  <div class="item col-3 bg-primary m-2">
+                    Producto
+                  </div>
+                  <div class="item col-3 bg-warning m-2">
+                    Producto
+                  </div>
+                  <div class="item col-3 bg-dark m-2">
                     Producto
                   </div>
                 </div>
