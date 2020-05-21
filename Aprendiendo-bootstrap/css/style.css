@@ -6,3 +6,9 @@
   list-style: none;
   line-height: 10px;
 }
+
+.item {
+  height: 150px;
+  color: white;
+  font-weight: bold;
+}
