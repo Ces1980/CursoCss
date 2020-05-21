@@ -20,3 +20,11 @@ footer {
   color: white;
   font-weight: bold;
 }
+
+.lateral {
+  height: 550px;
+}
+
+.lateral > div {
+  height: 50px;
+}
