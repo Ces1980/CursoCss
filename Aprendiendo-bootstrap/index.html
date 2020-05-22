@@ -8,24 +8,23 @@
     <title>Aprendiendo Bootstrap por César Vargas Escorcia</title>
   </head>
   <body>
-    <!-- <div class="container p-5 border border-danger mt-5">
-      <h1>Aprendiendo Bootstrap por César Vargas Escorcia</h1>
-      <h2>Clases de Bootstrap: aprendiendo un framework de CSS</h2>
-      <button class="btn btn-success">Hola soy un boton</button>
-    </div> -->
-
+    <!-- class="container" crean un margen entre el total de la pantalla y el contenido -->
+    <!--  class="container-fluid" muestra en el total de la pantalla el contenido-->
     <div class="container border">
       <div class="row">
         <header id="header" class="col-12 bg-primary text-white p-2 pl-5 mt-3">
           <h1>Aprendiendo Bootstrap por César Vargas Escorcia</h1>
         </header>
-        <nav id="menu" class="col-12 bg-secondary text-white p-3">
+        <nav
+          id="menu"
+          class="navbar navbar-default navbar-fixed-top col-12 bg-secondary text-white p-3"
+        >
           <ul class="row w-50">
-            <li class="col">Inicio</li>
-            <li class="col">Página 1</li>
-            <li class="col">Página 2</li>
-            <li class="col">Página 3</li>
-            <li class="col">Contacto</li>
+            <li class="col col-xs-12 col-sm-12 col-md">Inicio</li>
+            <li class="col col-xs-12 col-sm-12 col-md">Página 1</li>
+            <li class="col col-xs-12 col-sm-12 col-md">Página 2</li>
+            <li class="col col-xs-12 col-sm-12 col-md">Página 3</li>
+            <li class="col col-xs-12 col-sm-12 col-md">Contacto</li>
           </ul>
         </nav>
         <!-- row permite que los elementos contenidos se pongan una a lado de otra -->
@@ -35,8 +34,18 @@
               <h2>Productos</h2>
               <hr />
               <div class="items">
-                <!-- class= "row" -> Organiza el continido en una sola fila y acomoda los espacio de forma automatica -->
                 <div class="row">
+                  <div class="item col col-lg col-md-12 col-sm-12 bg-primary">
+                    Producto
+                  </div>
+                  <div class="item col col-lg col-md-6 col-sm-6 bg-warning">
+                    Producto
+                  </div>
+                  <div class="item col col-lg col-md-6 col-sm-6 bg-danger">
+                    Producto
+                  </div>
+                </div>
+                <div class="row mt-1">
                   <div class="item col bg-primary m-2">
                     <h4 class="font-weight-bold">Producto</h4>
                     <p class="font-weight-normal">
