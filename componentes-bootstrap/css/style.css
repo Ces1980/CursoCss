@@ -1,0 +1,37 @@
+#menu {
+  height: 60px;
+}
+#menu ul {
+  text-decoration: none;
+  list-style: none;
+  line-height: 10px;
+}
+
+.item {
+  height: 150px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.lateral {
+  height: 250px;
+}
+
+.lateral > div {
+  height: calc(250px / 3);
+}
+
+@media (max-width: 768px) {
+  #menu {
+    height: auto;
+    margin: 10px;
+  }
+}
