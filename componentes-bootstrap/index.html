@@ -205,6 +205,25 @@
           </div>
         </div>
         <!-- Termina collapse -->
+        <!-- Inicia barra progreso-->
+
+        <div class="progress mt-5">
+          <div id="barra-progreso" class="progress-bar progress-bar-striped bg-info" role="progressbar">
+            0%
+          </div>
+        </div>
+        <script>
+          let contador = 0;
+          setInterval(function () {
+            if (contador < 100) {
+              contador++;
+              let barra = document.querySelector("#barra-progreso");
+              barra.style.width = contador + '%';
+              barra.innerHTML = contador + '%';
+            }
+          }, 800);
+        </script>
+        <!-- Termina barra progreso-->
         <!-- Termina Jumbotron -->
       </div>
       <!-- Termina la barra lateral -->
@@ -288,7 +307,7 @@
   <script>
     $(document).ready(function () {
       $(".carousel").carousel({
-        interval: 1000
+        interval: 800
       });
     });
   </script>
