@@ -242,6 +242,11 @@
           Alert
         </button>
         <!-- Tooltip -->
+        <!-- popover -->
+        <button type="button" class="btn-pop btn btn-lg btn-dark mt-3" data-container="body" data-toggle="popover"
+          data-placement="bottom" title="Mensaje:" data-content="Has dado click a un buen popover">Dale click a
+          este popover</button>
+        <!-- popover -->
         <!-- Termina Jumbotron -->
       </div>
       <!-- Termina la barra lateral -->
@@ -329,6 +334,7 @@
         interval: 800
       });
       $("#btn-tool").tooltip();
+      $(".btn-pop").popover();
     });
   </script>
 </body>
