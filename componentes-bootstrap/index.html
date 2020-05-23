@@ -224,6 +224,24 @@
           }, 800);
         </script>
         <!-- Termina barra progreso-->
+        <!-- Tooltip -->
+        <button type="button" class="btn-tool btn btn-danger mt-3 ml-3" data-toggle="tooltip" data-placement="bottom"
+          title="Si das click sacas una alerta">
+          Alert
+        </button>
+        <button type="button" class="btn-tool btn btn-dark mt-3 ml-3" data-toggle="tooltip" data-placement="right"
+          title="Si das click sacas una alerta">
+          Alert
+        </button>
+        <button type="button" class="btn-tool btn btn-info mt-3 ml-3" data-toggle="tooltip" data-placement="top"
+          title="Si das click sacas una alerta">
+          Alert
+        </button>
+        <button type="button" class="btn-tool btn btn-success mt-3 ml-3" data-toggle="tooltip" data-placement="left"
+          title="Si das click sacas una alerta">
+          Alert
+        </button>
+        <!-- Tooltip -->
         <!-- Termina Jumbotron -->
       </div>
       <!-- Termina la barra lateral -->
@@ -303,12 +321,14 @@
     <!-- Termina tarjeta -->
   </div>
   <script type="text/javascript" src="jquery/jquery.js"></script>
+  <script type="text/javascript" src="jquery/popper.min.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function () {
       $(".carousel").carousel({
         interval: 800
       });
+      $("#btn-tool").tooltip();
     });
   </script>
 </body>
