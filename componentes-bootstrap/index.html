@@ -158,6 +158,84 @@
           <a href="#" class="badge badge-success badge-pill">Success</a>
         </p>
         <!-- Termina Badgets -->
+        <!-- Inicia tarjeta -->
+        <div class="row col-md-9 justify-content-around">
+          <div class="card p-0 mr-3" style="width: 10rem;">
+            <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Tarjeta 1</h3>
+              <p class="card-text">Hola, entra a este articulo y aprenderas Bootstrap</p>
+              <a href="" class="btn btn-success">Entrar</a>
+            </div>
+          </div>
+          <div class="card p-0 mr-2" style="width: 10rem;">
+            <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Tarjeta 2</h3>
+              <p class="card-text">Hola, entra a este articulo y aprenderas Bootstrap</p>
+              <a href="" class="btn btn-info">Entrar</a>
+            </div>
+          </div>
+          <div class="card p-0 mr-2" style="width: 10rem;">
+            <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Tarjeta 3</h3>
+              <p class="card-text">Hola, entra a este articulo y aprenderas Bootstrap</p>
+              <a href="" class="btn btn-danger">Entrar</a>
+            </div>
+          </div>
+          <br>
+
+          <!-- Separa elementos flotados -->
+          <div class="clearfix"></div>
+          <!--  -->
+          <br>
+          <!-- Inicia páginación -->
+          <div class="row">
+            <nav aria-label="pagination" class="m-3">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    &laquo;
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    1
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    2
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    3
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    4
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    5
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    &raquo;
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Termina paginación -->
+        </div>
+        <!-- Termina tarjeta -->
       </div>
       <!-- Inicia barra lateral-->
       <div class="col-md-4">
@@ -165,7 +243,7 @@
         <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModalCenter">
           Sacar ventana
         </button>
-
+        <div class="clearfix"></div>
         <!-- Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
           aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -247,82 +325,48 @@
           data-placement="bottom" title="Mensaje:" data-content="Has dado click a un buen popover">Dale click a
           este popover</button>
         <!-- popover -->
+        <hr>
+        <h3>Formulario</h3>
+        <form>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text rounded-0">Nombre</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Ingresa tu nombre">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">Genero</label>
+            <select class="form-control">
+              <option>Hombre</option>
+              <option>Mujer</option>
+              <option>Bisexual</option>
+              <option>Transexual</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="">Correo electronico</label>
+            <input type="email" class="form-control">
+            <small id="#" class="form-text text-muted">Comparta su correo electronico</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresa tu contraseña">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Checar por favor!</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar!</button>
+        </form>
         <!-- Termina Jumbotron -->
       </div>
       <!-- Termina la barra lateral -->
     </div>
     <br>
     <!-- Inicia tarjeta -->
-    <div class="row col-md-8 justify-content-between">
-      <div class="card p-0 mr-3" style="width: 14rem;">
-        <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200" alt="">
-        <div class="card-body">
-          <h3 class="card-title">Tarjeta 1</h3>
-          <p class="card-text">Hola, entra a este articulo y aprenderas Bootstrap</p>
-          <a href="" class="btn btn-success">Entrar</a>
-        </div>
-      </div>
-      <div class="card p-0 mr-2" style="width: 14rem;">
-        <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200" alt="">
-        <div class="card-body">
-          <h3 class="card-title">Tarjeta 2</h3>
-          <p class="card-text">Hola, entra a este articulo y aprenderas Bootstrap</p>
-          <a href="" class="btn btn-info">Entrar</a>
-        </div>
-      </div>
-      <div class="card p-0 mr-2" style="width: 14rem;">
-        <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200" alt="">
-        <div class="card-body">
-          <h3 class="card-title">Tarjeta 3</h3>
-          <p class="card-text">Hola, entra a este articulo y aprenderas Bootstrap</p>
-          <a href="" class="btn btn-danger">Entrar</a>
-        </div>
-      </div>
-      <!-- Separa elementos flotados -->
-      <div class="clearfix"></div>
-      <!--  -->
-      <!-- Inicia páginación -->
-      <nav aria-label="pagination" class="m-3">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#">
-              &laquo;
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
-              1
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
-              2
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
-              3
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
-              4
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
-              5
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
-              &raquo;
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Termina paginación -->
-    </div>
+
     <!-- Termina tarjeta -->
   </div>
   <script type="text/javascript" src="jquery/jquery.js"></script>
